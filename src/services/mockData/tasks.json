@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "title": "Review quarterly sales report and prepare presentation for board meeting",
+    "completed": false,
+    "categoryId": "1",
+    "priority": "high",
+    "dueDate": "2024-12-20T00:00:00.000Z",
+    "createdAt": "2024-12-15T09:00:00.000Z",
+    "updatedAt": "2024-12-15T09:00:00.000Z"
+  },
+  {
+    "id": "2",
+    "title": "Schedule one-on-one meetings with team members for performance reviews",
+    "completed": true,
+    "categoryId": "1",
+    "priority": "medium",
+    "dueDate": "2024-12-18T00:00:00.000Z",
+    "createdAt": "2024-12-14T14:30:00.000Z",
+    "updatedAt": "2024-12-16T10:15:00.000Z"
+  },
+  {
+    "id": "3",
+    "title": "Update project timeline and communicate changes to stakeholders",
+    "completed": false,
+    "categoryId": "2",
+    "priority": "high",
+    "dueDate": "2024-12-19T00:00:00.000Z",
+    "createdAt": "2024-12-15T11:20:00.000Z",
+    "updatedAt": "2024-12-15T11:20:00.000Z"
+  },
+  {
+    "id": "4",
+    "title": "Research new productivity tools for the development team",
+    "completed": false,
+    "categoryId": "2",
+    "priority": "low",
+    "dueDate": "2024-12-25T00:00:00.000Z",
+    "createdAt": "2024-12-14T16:45:00.000Z",
+    "updatedAt": "2024-12-14T16:45:00.000Z"
+  },
+  {
+    "id": "5",
+    "title": "Plan holiday team building event and send invitations",
+    "completed": false,
+    "categoryId": "3",
+    "priority": "medium",
+    "dueDate": "2024-12-21T00:00:00.000Z",
+    "createdAt": "2024-12-13T13:15:00.000Z",
+    "updatedAt": "2024-12-13T13:15:00.000Z"
+  },
+  {
+    "id": "6",
+    "title": "Backup important project files and documents to cloud storage",
+    "completed": true,
+    "categoryId": "3",
+    "priority": "low",
+    "dueDate": null,
+    "createdAt": "2024-12-12T08:30:00.000Z",
+    "updatedAt": "2024-12-15T17:00:00.000Z"
+  }
+]

@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import react-toastify CSS */
+@import 'react-toastify/dist/ReactToastify.css';
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+
+/* Ensure scrollbars are visible */
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Prevent horizontal overflow */
+* {
+  max-width: 100%;
+}
+
+/* Main content areas must allow scroll */
+.main-content {
+  overflow-y: auto;
+  height: 100vh;
+}
+
+@layer utilities {
+  /* Only use scrollbar-hide for specific UI elements, never main content */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .priority-high {
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF5252 100%);
+  }
+  
+  .priority-medium {
+    background: linear-gradient(135deg, #FFD93D 0%, #FFC107 100%);
+  }
+  
+  .priority-low {
+    background: linear-gradient(135deg, #4ECDC4 0%, #26A69A 100%);
+  }
+}
+
+/* Custom checkbox styles */
+.custom-checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #CBD5E1;
+  border-radius: 4px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.custom-checkbox:checked {
+  border-color: #4ECDC4;
+  background: #4ECDC4;
+}
+
+.custom-checkbox:checked::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  top: 2px;
+  left: 6px;
+  animation: checkDraw 0.3s ease-out;
+}
+
+/* Progress ring animations */
+.progress-ring-circle {
+  transition: stroke-dasharray 0.3s ease;
+}
