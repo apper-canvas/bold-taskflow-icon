@@ -11,7 +11,7 @@ import BulkDeleteConfirmation from '@/components/organisms/BulkDeleteConfirmatio
 import EmptyStateMessage from '@/components/organisms/EmptyStateMessage';
 import ApperIcon from '@/components/ApperIcon';
 import { motion } from 'framer-motion';
-import abcd from '@/components/abcd'
+import abcd from '../components/abcd'
 
 function HomePage() {
   const [tasks, setTasks] = useState([]);
