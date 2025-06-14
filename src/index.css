@@ -28,6 +28,13 @@ body {
   height: 100vh;
 }
 
+@layer base {
+  /* Ensure essential border classes exist */
+  .border-border {
+    border-color: #e2e8f0;
+  }
+}
+
 @layer utilities {
   /* Only use scrollbar-hide for specific UI elements, never main content */
   .scrollbar-hide {

@@ -6,7 +6,31 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
+colors: {
+        // Essential Tailwind color tokens
+        border: '#e2e8f0',
+        input: '#e2e8f0',
+        ring: '#5B4CFF',
+        background: '#ffffff',
+        foreground: '#0f172a',
+        
+        // Card colors
+        card: '#ffffff',
+        'card-foreground': '#0f172a',
+        
+        // Popover colors
+        popover: '#ffffff',
+        'popover-foreground': '#0f172a',
+        
+        // Muted colors
+        muted: '#f1f5f9',
+        'muted-foreground': '#64748b',
+        
+        // Destructive colors
+        destructive: '#FF6B6B',
+        'destructive-foreground': '#ffffff',
+        
+        // Custom application colors
         primary: '#5B4CFF',
         secondary: '#FF6B6B',
         accent: '#4ECDC4',
