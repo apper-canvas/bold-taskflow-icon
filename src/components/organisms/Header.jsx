@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
 import ApperIcon from '@/components/ApperIcon';
 import SearchBar from '@/components/molecules/SearchBar';
 import Button from '@/components/atoms/Button';
+import { AuthContext } from '../../App';
 
 const Header = ({ searchQuery, onSearchChange, completedCount, totalCount, onNewTaskClick }) => {
+    const { logout } = useContext(AuthContext);
+
     return (
         <header className="flex-shrink-0 h-20 bg-white border-b border-surface-200 px-6 flex items-center justify-between z-40">
             <div className="flex items-center space-x-6">
@@ -45,6 +48,17 @@ const Header = ({ searchQuery, onSearchChange, completedCount, totalCount, onNew
                 >
                     <ApperIcon name="Plus" className="w-4 h-4" />
                     <span>New Task</span>
+                </Button>
+
+                {/* Logout Button */}
+                <Button
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    onClick={logout}
+                    className="px-4 py-2 bg-surface-100 text-surface-700 rounded-lg font-medium hover:bg-surface-200 transition-colors flex items-center space-x-2"
+                >
+                    <ApperIcon name="LogOut" className="w-4 h-4" />
+                    <span>Logout</span>
                 </Button>
             </div>
         </header>
